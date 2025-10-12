@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI 챌린지 추천기</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <style>
+    /* 챗봇 스타일 */
+    #chatbot {
+      display: {{ 'block' if show_chatbot else 'none' }};
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      height: 400px;
+      border: 1px solid #ddd;
+      background: white;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      padding: 10px;
+      overflow: auto;
+      font-size: 14px;
+      z-index: 1000;
+    }
+    #chatbot-messages {
+      height: 320px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+    #chatbot-input {
+      width: calc(100% - 50px);
+      padding: 5px;
+    }
+    #chatbot-send {
+      width: 40px;
+    }
+    .user-msg { color: blue; }
+    .bot-msg { color: green; }
+  </style>
+</head>
+<body>
+  <h2>오늘의 감정 상태를 선택해주세요</h2>
+  <div class="form-wrapper">
+    <form method="POST" action="/analyze">
+      <label>감정 카테고리:</label>
+      <select id="emotion-category" required>
+        <option value="">-- 감정 분류 선택 --</option>
+        <option value="Positive">긍정</option>
+        <option value="Neutral">중립</option>
+        <option value="Negative">부정</option>
+      </select>
+
+      <label>세부 감정:</label>
+      <select name="feeling_text" id="feeling_text" required>
+        <option value="">-- 세부 감정 선택 --</option>
+      </select>
+
+      <label>기분 점수 (0~10):</label>
+      <input type="number" name="mood" min="0" max="10" required />
+
+      <label>수면 시간 (시간):</label>
+      <input type="number" name="sleep" min="0" max="24" required />
+
+      <label>오늘 활동량 (0~10):</label>
+      <input type="number" name="activity" min="0" max="10" required />
+
+      <label>관심사 (예: 그림, 산책, 글쓰기 등):</label>
+      <input type="text" name="interest" required />
+
+      <!-- 👇 bad_score 히든 필드 -->
+      <input type="hidden" name="bad_score" id="bad_score" value="0" />
+
+      <input type="submit" value="분석하고 챌린지 추천받기" />
+    </form>
+  </div>
+
+  <!-- ✅ 챗봇 UI -->
+  <div id="chatbot">
+    <div style="text-align: right;">
+      <button onclick="document.getElementById('chatbot').style.display='none'" style="border: none; background: none; font-size: 16px; cursor: pointer;">❌</button>
+    </div>
+    <div id="chatbot-messages"></div>
+    <input type="text" id="chatbot-input" placeholder="메시지를 입력하세요" />
+    <button id="chatbot-send">전송</button>
+  </div>
+
+  <script>
+    // ✅ 감정 카테고리 - 세부 감정 연결
+    const emotionMap = {
+      Positive: ["행복", "즐거움", "기쁨", "사랑", "설렘", "감사", "신남", "편안함", "희망적", "좋은 하루", "기분 최고"],
+      Neutral: ["보통", "평범함", "무덤덤", "무난함", "그냥 그래", "일상적", "평온함"],
+      Negative: ["슬픔", "우울", "화남", "답답함", "불안", "외로움", "피곤함", "스트레스", "걱정", "속상함", "힘든 하루"]
+    };
+
+    document.getElementById('emotion-category').addEventListener('change', function () {
+      const category = this.value;
+      const feelingSelect = document.getElementById('feeling_text');
+      feelingSelect.innerHTML = '<option value="">-- 세부 감정 선택 --</option>';
+      if (emotionMap[category]) {
+        emotionMap[category].forEach(feeling => {
+          const opt = document.createElement('option');
+          opt.value = feeling;
+          opt.textContent = feeling;
+          feelingSelect.appendChild(opt);
+        });
+      }
+    });
+
+    // ✅ 부정 감정이면 bad_score=1로 설정
+    document.querySelector('form').addEventListener('submit', function () {
+      const category = document.getElementById('emotion-category').value;
+      document.getElementById('bad_score').value = category === 'Negative' ? "1" : "0";
+    });
+
+    // ✅ 챗봇 동작
+    const chatbotMessages = document.getElementById('chatbot-messages');
+    const chatbotInput = document.getElementById('chatbot-input');
+    const chatbotSend = document.getElementById('chatbot-send');
+
+    function appendMessage(text, className) {
+      const p = document.createElement('p');
+      p.textContent = text;
+      p.className = className;
+      chatbotMessages.appendChild(p);
+      chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+
+    chatbotSend.addEventListener('click', () => {
+      const message = chatbotInput.value.trim();
+      if (!message) return;
+      appendMessage("나: " + message, 'user-msg');
+      chatbotInput.value = '';
+
+      fetch('/chatbot', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({message})
+      })
+      .then(res => res.json())
+      .then(data => {
+        appendMessage("챗봇: " + data.response, 'bot-msg');
+      });
+    });
+
+    // ✅ 챗봇이 보일 경우 첫 질문 자동 출력
+    window.onload = () => {
+      const showChatbot = {{ 'true' if show_chatbot else 'false' }};
+      if (showChatbot === true) {
+        document.getElementById("chatbot").style.display = "block";
+
+        fetch('/chatbot', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({message: ''})
+        })
+        .then(res => res.json())
+        .then(data => {
+          appendMessage("챗봇: " + data.response, 'bot-msg');
+        });
+      }
+    };
+  </script>
+</body>
+</html>

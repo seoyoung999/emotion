@@ -1,0 +1,93 @@
+/* static/style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #4a60f6;
+}
+
+.form-wrapper {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  margin-top: 1.5rem;
+  background-color: #5c7cfa;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3b5bdb;
+}
+
+.result-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.result-card h2,
+.result-card h3 {
+  margin-bottom: 1rem;
+}
+
+.result-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.result-card li {
+  margin: 0.5rem 0;
+}
+
+.result-card a {
+  color: #5c7cfa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.result-card a:hover {
+  text-decoration: underline;
+}

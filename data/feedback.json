@@ -1,0 +1,596 @@
+[
+  {
+    "user_id": "user123",
+    "challenge_title": "기분 전환 산책",
+    "status": "긍정적",
+    "interest": "음악",
+    "satisfaction": 5,
+    "emotion_after": "매우 긍정적",
+    "timestamp": "2025-07-06T14:21:30"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "기분 전환 산책",
+    "status": "보통",
+    "interest": "노래듣기",
+    "satisfaction": 4,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T18:37:55.558651"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "기분 전환 산책",
+    "status": "나쁨",
+    "interest": "그림",
+    "satisfaction": 2,
+    "emotion_after": "낫배드",
+    "timestamp": "2025-07-06T19:10:23.029847"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "기분 전환 산책",
+    "status": "나쁨",
+    "interest": "산책",
+    "satisfaction": 4,
+    "emotion_after": "굿",
+    "timestamp": "2025-07-06T19:11:35.507336"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "기분 전환 산책",
+    "status": "나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 2,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T19:12:11.083334"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "기분 전환 산책",
+    "status": "보통",
+    "interest": "잠",
+    "satisfaction": 2,
+    "emotion_after": "낫배드",
+    "timestamp": "2025-07-06T19:13:43.166039"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "기분 전환 산책",
+    "status": "매우 나쁨",
+    "interest": "산책",
+    "satisfaction": 3,
+    "emotion_after": "나쁨",
+    "timestamp": "2025-07-06T19:14:11.629961"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "기분 전환 산책",
+    "status": "매우 나쁨",
+    "interest": "휴대폰하기",
+    "satisfaction": 3,
+    "emotion_after": "나쁨",
+    "timestamp": "2025-07-06T19:14:32.738639"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "기분 전환 산책",
+    "status": "나쁨",
+    "interest": "잠",
+    "satisfaction": 3,
+    "emotion_after": "낫배드",
+    "timestamp": "2025-07-06T19:24:32.772528"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "기분 전환 산책",
+    "status": "나쁨",
+    "interest": "산책",
+    "satisfaction": 5,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T19:24:50.729449"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "휴대폰하기",
+    "satisfaction": 2,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T19:25:16.759082"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "노래듣기",
+    "satisfaction": 5,
+    "emotion_after": "나쁨",
+    "timestamp": "2025-07-06T19:25:34.658693"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "그림",
+    "satisfaction": 3,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T19:25:54.616323"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "잠",
+    "satisfaction": 3,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T20:06:10.633476"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "잠",
+    "satisfaction": 3,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T20:14:41.710485"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "산책",
+    "satisfaction": 3,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T20:15:14.097443"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "잠",
+    "satisfaction": 2,
+    "emotion_after": "굿",
+    "timestamp": "2025-07-06T20:15:33.884562"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 2,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T20:15:52.654564"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "휴대폰하기",
+    "satisfaction": 2,
+    "emotion_after": "나쁨",
+    "timestamp": "2025-07-06T20:16:14.910298"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 2,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T20:24:15.713114"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "잠",
+    "satisfaction": 3,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T20:24:34.164312"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감성 그림 일기",
+    "status": "보통",
+    "interest": "산책",
+    "satisfaction": 3,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T20:24:53.999715"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감성 그림 일기",
+    "status": "보통",
+    "interest": "휴대폰하기",
+    "satisfaction": 3,
+    "emotion_after": "나쁘지 않음",
+    "timestamp": "2025-07-06T20:25:17.389940"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "잠",
+    "satisfaction": 3,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T20:35:24.081608"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 3,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T20:48:28.690743"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "산책",
+    "satisfaction": 3,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T20:49:02.789996"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "산책",
+    "satisfaction": 3,
+    "emotion_after": "나쁨",
+    "timestamp": "2025-07-06T20:52:00.411225"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "잠",
+    "satisfaction": 5,
+    "emotion_after": "굿",
+    "timestamp": "2025-07-06T20:52:20.226548"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "산책",
+    "satisfaction": 3,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T20:52:41.220349"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 5,
+    "emotion_after": "아주 좋음",
+    "timestamp": "2025-07-06T20:53:06.991324"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "휴대폰하기",
+    "satisfaction": 3,
+    "emotion_after": "나쁨",
+    "timestamp": "2025-07-06T20:53:33.070350"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "노래듣기",
+    "satisfaction": 3,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T21:16:44.425888"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 2,
+    "emotion_after": "나쁘지 않음",
+    "timestamp": "2025-07-06T21:17:01.556068"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 4,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-06T21:17:24.367797"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "산책",
+    "satisfaction": 4,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T21:17:54.258788"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감성 그림 일기",
+    "status": "보통",
+    "interest": "노래듣기",
+    "satisfaction": 5,
+    "emotion_after": "나쁨",
+    "timestamp": "2025-07-06T21:18:13.545312"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감성 그림 일기",
+    "status": "보통",
+    "interest": "잠",
+    "satisfaction": 5,
+    "emotion_after": "굿",
+    "timestamp": "2025-07-06T22:36:45.329860"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 3,
+    "emotion_after": "나쁨",
+    "timestamp": "2025-07-06T22:37:52.401238"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감성 그림 일기",
+    "status": "보통",
+    "interest": " ",
+    "satisfaction": 3,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T22:38:55.639164"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "1",
+    "satisfaction": 1,
+    "emotion_after": "유지",
+    "timestamp": "2025-07-06T22:39:10.514204"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "산책",
+    "satisfaction": 2,
+    "emotion_after": "유지",
+    "timestamp": "2025-07-06T22:39:30.021418"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감성 그림 일기",
+    "status": "보통",
+    "interest": "여름",
+    "satisfaction": 5,
+    "emotion_after": "매우 긍정적",
+    "timestamp": "2025-07-06T22:39:32.310661"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "노래듣기",
+    "satisfaction": 2,
+    "emotion_after": "굿",
+    "timestamp": "2025-07-06T22:39:47.862097"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "노래듣기",
+    "satisfaction": 1,
+    "emotion_after": "유지",
+    "timestamp": "2025-07-06T22:39:49.080626"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "영화감상",
+    "satisfaction": 1,
+    "emotion_after": "1",
+    "timestamp": "2025-07-06T22:40:18.177499"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "책",
+    "satisfaction": 5,
+    "emotion_after": "보통",
+    "timestamp": "2025-07-06T22:40:28.927727"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음 진정 명상",
+    "status": "매우 나쁨",
+    "interest": "영화감상",
+    "satisfaction": 3,
+    "emotion_after": "유지",
+    "timestamp": "2025-07-06T22:40:36.576208"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 1,
+    "emotion_after": "나쁘지 않음",
+    "timestamp": "2025-07-06T22:42:27.194961"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "유쾌한 밈 모음 보기",
+    "status": "매우 긍정적",
+    "interest": " ",
+    "satisfaction": 1,
+    "emotion_after": "0",
+    "timestamp": "2025-07-06T22:43:43.826215"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정 노트 쓰기",
+    "status": "나쁨",
+    "interest": "ㅂ",
+    "satisfaction": 1,
+    "emotion_after": ".",
+    "timestamp": "2025-07-06T22:49:44.325394"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감성 그림 일기",
+    "status": "보통",
+    "interest": "잠",
+    "satisfaction": 1,
+    "emotion_after": "4",
+    "timestamp": "2025-07-06T22:59:31.524964"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감성 그림 일기",
+    "status": "보통",
+    "interest": "휴대폰하기",
+    "satisfaction": 1,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T23:03:28.513012"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감성 그림 일기",
+    "status": "보통",
+    "interest": "산책",
+    "satisfaction": 1,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-06T23:04:44.855678"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "간단한 스트레칭 (4)",
+    "status": "긍정적",
+    "interest": ".",
+    "satisfaction": 1,
+    "emotion_after": "좋아요",
+    "timestamp": "2025-07-07T15:27:04.726524"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "힐링 산책 (3)",
+    "status": "보통",
+    "interest": "운동",
+    "satisfaction": 5,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-07T15:27:37.274484"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음챙김 명상 (2)",
+    "status": "매우 긍정적",
+    "interest": "정치",
+    "satisfaction": 4,
+    "emotion_after": "매우매우매루긍정",
+    "timestamp": "2025-07-07T15:28:13.061870"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "마음챙김 명상 (2)",
+    "status": "나쁨",
+    "interest": " ",
+    "satisfaction": 2,
+    "emotion_after": "굿",
+    "timestamp": "2025-07-07T15:29:38.014736"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "힐링 산책 (3)",
+    "status": "긍정적",
+    "interest": "ㅊ",
+    "satisfaction": 4,
+    "emotion_after": "좋아요",
+    "timestamp": "2025-07-07T15:31:54.829539"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "간단한 스트레칭 (4)",
+    "status": "보통",
+    "interest": "잠",
+    "satisfaction": 3,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-07T15:34:53.484251"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "힐링 산책 (3)",
+    "status": "나쁨",
+    "interest": "산책",
+    "satisfaction": 3,
+    "emotion_after": "좋음",
+    "timestamp": "2025-07-07T16:13:15.174206"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정일기 쓰기 (1)",
+    "status": "나쁨",
+    "interest": "잠",
+    "satisfaction": 4,
+    "emotion_after": "나쁨",
+    "timestamp": "2025-07-07T16:13:29.856961"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정일기 쓰기 (1)",
+    "status": "나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 3,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-07T16:13:44.746754"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "힐링 산책 (3)",
+    "status": "나쁨",
+    "interest": "책 읽기",
+    "satisfaction": 4,
+    "emotion_after": "낫배드",
+    "timestamp": "2025-07-07T16:14:02.943753"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "그림 일기 (5)",
+    "status": "나쁨",
+    "interest": "노래듣기",
+    "satisfaction": 5,
+    "emotion_after": "나쁘지 않음",
+    "timestamp": "2025-07-07T16:14:28.585418"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "그림 일기 (5)",
+    "status": "매우 나쁨",
+    "interest": "산책",
+    "satisfaction": 4,
+    "emotion_after": "긍정",
+    "timestamp": "2025-07-07T16:24:49.500346"
+  },
+  {
+    "user_id": "user123",
+    "challenge_title": "감정일기 쓰기 (1)",
+    "status": "보통",
+    "interest": "산책",
+    "satisfaction": 4,
+    "emotion_after": "낫배드",
+    "timestamp": "2025-07-07T18:48:18.099765"
+  }
+]
